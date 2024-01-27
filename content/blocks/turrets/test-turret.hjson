@@ -1,31 +1,40 @@
+type: PowerTurret
 name: "Test Turret"
 description: '''
   A test turret. [red]Only[] available in [orange]Sandbox[] mode.
 '''
-health: 150
 size: 2
-reload: 45
-recoil: 2
-shootSound: shootlaser
-consumes: {
-  power: 1.2
-}
+health: 500
+reload: 60
+inaccuracy: 0
+range: 96
+heatColor: 80a9ff
 shootEffect: {
-  type: WaveEffect
-  sizeFrom: 0
-  sizeTo: 16
+  type: ParticleEffect
+  line: true
+  particles: 10
   lifetime: 15
+  length: 25
+  cone: 35
+  strokeFrom: 1
   strokeTo: 0
+  lenFrom: 4
+  lenTo: 0
   colorFrom: ffffff
-  colorTo: 80a9ff00
+  colorTo: 80a9ff
 }
 smokeEffect: none
-range: 96
+rotateSpeed: 5.5
+shootSound: laser
+consumes: {
+  power: 1.5
+}
+hasPower: true
 shootType: {
   type: BasicBulletType
   speed: 4
   lifetime: 24
-  damage: 45
+  damage: 85
   sprite: circle-bullet
   width: 3
   height: 3
@@ -35,7 +44,7 @@ shootType: {
   lightColor: 80a9ff
   trailColor: 80a9ff
   trailWidth: 1.5
-  trailLength: 10
+  trailLength: 9
   trailEffect: none
   hitEffect: {
     type: MultiEffect
@@ -45,24 +54,24 @@ shootType: {
         type: WaveEffect
         lifetime: 25
         sizeFrom: 0
-        sizeTo: 4
+        sizeTo: 12
         strokeFrom: 1
         strokeTo: 0
-        colorFrom: ffffff
-        colorTo: 80a9ff00
+        colorFrom: 80a9ff
+        colorTo: 80a9ff
       }
       {
         type: ParticleEffect
         line: true
-        particles: 10
+        particles: 7
         lifetime: 25
-        length: 22
+        length: 15
         strokeFrom: 1
         strokeTo: 0
         lenFrom: 4
         lenTo: 0
-        colorFrom: 80a9ff
-        colorTo: 80a9ff00
+        colorFrom: ffffff
+        colorTo: 80a9ff
       }
     ]
   }
