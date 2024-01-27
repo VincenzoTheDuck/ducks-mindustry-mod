@@ -1,0 +1,14 @@
+name: "ducks-mindustry-mod"
+displayName: "[blue]Duck's Mindustry Mod"
+description:
+'''
+  A dumb Mindustry mod.
+  
+  It's planned to have a lot of content, but currently, it's kinda small.
+  
+  I'll write more of the description later.
+'''
+author: "Duck"
+minGameVersion: "136"
+version: "1.0"
+repo: VincenzoTheDuck/ducks-mindustry-mod
