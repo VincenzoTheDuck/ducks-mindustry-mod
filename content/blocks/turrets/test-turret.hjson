@@ -1,0 +1,72 @@
+name: "Test Turret"
+description: '''
+  A test turret. [red]Only[] available in [orange]Sandbox[] mode.
+'''
+health: 150
+size: 2
+reload: 45
+recoil: 2
+shootSound: shootlaser
+consumes: {
+  power: 1.2
+}
+shootEffect: {
+  type: WaveEffect
+  sizeFrom: 0
+  sizeTo: 16
+  lifetime: 15
+  strokeTo: 0
+  colorFrom: ffffff
+  colorTo: 80a9ff00
+}
+smokeEffect: none
+range: 96
+shootType: {
+  type: BasicBulletType
+  speed: 4
+  lifetime: 24
+  damage: 45
+  sprite: circle-bullet
+  width: 3
+  height: 3
+  shrinkY: 0
+  frontColor: ffffff
+  backColor: 80a9ff
+  lightColor: 80a9ff
+  trailColor: 80a9ff
+  trailWidth: 1.5
+  trailLength: 10
+  trailEffect: none
+  hitEffect: {
+    type: MultiEffect
+    lifetime: 70
+    effects: [
+      {
+        type: WaveEffect
+        lifetime: 25
+        sizeFrom: 0
+        sizeTo: 4
+        strokeFrom: 1
+        strokeTo: 0
+        colorFrom: ffffff
+        colorTo: 80a9ff00
+      }
+      {
+        type: ParticleEffect
+        line: true
+        particles: 10
+        lifetime: 25
+        length: 22
+        strokeFrom: 1
+        strokeTo: 0
+        lenFrom: 4
+        lenTo: 0
+        colorFrom: 80a9ff
+        colorTo: 80a9ff00
+      }
+    ]
+  }
+  despawnEffect: none
+  despawnHit: true
+}
+category: turret
