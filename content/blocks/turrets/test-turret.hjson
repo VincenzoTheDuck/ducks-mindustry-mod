@@ -9,20 +9,6 @@ reload: 60
 inaccuracy: 0
 range: 96
 heatColor: 80a9ff
-drawer: {
-  type: DrawTurret
-  parts: [
-    {
-      type: RegionPart
-      color: 80a9ff00
-      colorTo: 80a9ff
-      progress: warmup
-      blending: additive
-      outline: false
-      suffix: "-glow"
-    }
-  ]
-}
 shootEffect: {
   type: ParticleEffect
   line: true
